@@ -1,0 +1,59 @@
+html,
+body {
+  width: 100%;
+  font-family: "HelveticaNeue-Light", "Lato", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  height: 125px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.2);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.2);
+  box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.2);
+}
+.logo {
+  height: 125px;
+}
+.logo-container {
+  margin: 0 auto;
+  font-family: "HelveticaNeue-UltraLight";
+  margin-top: 28px;
+}
+.logo-container span {
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #5b3922;
+}
+.logo-container .last-name {
+  font-weight: 600;
+}
+.nav-links .active {
+  padding: 5px 20px;
+  border: 3px solid #33577e;
+}
+.nav-links .active a {
+  color: #33577e;
+}
+.nav-list {
+  list-style: none;
+  text-align: right;
+  margin: 35px 0;
+}
+.nav-list li {
+  display: inline-block;
+}
+.nav-list li:not(:last-child) {
+  margin-right: 10%;
+}
+.nav-list a {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 24px;
+}
+.nav-list a:hover {
+  text-decoration: none;
+  color: #33577e;
+}
