@@ -23,7 +23,29 @@ html(lang='en')
 
 		block content
 
-		script(href="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
-		script(href="/vendor/bootstrap/js/bootstrap.min.js")
-		script(href="/js/main.js")
+		//- block footer
+		footer.footer
+			.row
+				.col-sm-12.footer-hidden
+					i.fa.fa-angle-double-up.fa-3x.footer-chevron
+			.row
+				.col-sm-6.col-sm-offset-3
+					ul.social-icons
+						li: <a href="http://github.com/stevenmwade"><i class="fa fa-3x fa-github-square"></i></a>
+						li: <a href="http://linkedin.com/in/stevenmwade"><i class="fa fa-3x fa-linkedin-square"></i></a>
+						li: <a href="http://www.facebook.com/edawleahcilnevets"><i class="fa fa-3x fa-facebook-square"></i></a>
+						li: <a href="http://twitter.com/stevenmwade"><i class="fa fa-3x fa-twitter-square"></i></a>
+						li: <a href="http://instagram.com/stevenmwade/"><i class="fa fa-3x fa-instagram"></i></a>
+			.row
+				.col-sm-8.col-sm-offset-2
+					ul.footer-links
+						li: <a href="#">Home</a>
+						li: <a href="#">About</a>
+						li: <a href="#">Web</a>
+						li: <a href="#">Photo</a>
+						li: <a href="#">Contact</a>
+
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script(src="/vendor/bootstrap/js/bootstrap.min.js")
+		script(src="/js/main.js")
 		

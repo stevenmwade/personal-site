@@ -8,6 +8,8 @@ html, body
  a
  	text-decoration none
 
+// NAVIGATION
+
 .nav
 	height 125px
 	width 100%
@@ -53,6 +55,81 @@ html, body
 			text-decoration none
 			color blue
 
+// FOOTER
 
+.footer
+	width 100%
+	position absolute
+	bottom 0px
+	background-color blue
+	height 180px
+	margin-bottom -140px
+
+.footer-hidden
+	text-align center
+
+.footer-chevron
+	color #FFF
+	cursor pointer
+
+.footer-up
+	bottom 140px
+	transition bottom 0.7s ease-in-out
+	-webkit-transition bottom 0.7s ease-in-out
+	-moz-transition bottom 0.7s ease-in-out
+	-o-transition bottom 0.7s ease-in-out
+	
+.footer-down
+	bottom 0px
+	transition bottom 0.7s ease-in-out
+	-webkit-transition bottom 0.7s ease-in-out
+	-moz-transition bottom 0.7s ease-in-out
+	-o-transition bottom 0.7s ease-in-out
+
+.footer-chevron-up
+	transition transform 0.7s ease-in-out
+	-webkit-transition transform 0.7s ease-in-out
+	-moz-transition transform 0.7s ease-in-out
+	
+.footer-chevron-down
+	transform rotate(180deg)
+	-webkit-transform rotate(180deg)
+	-moz-transform rotate(180deg)
+	transition transform 0.7s ease-in-out
+	-webkit-transition transform 0.7s ease-in-out
+	-moz-transition transform 0.7s ease-in-out
+	
+.social-icons
+	text-align center
+	list-style none
+	width 100%
+	padding-left 0
+	li
+		display inline-block
+	li:not(:last-child)
+		margin-right 15%
+	a
+		color #FFF
+	a:hover
+		color #CCC
+
+.footer-links
+	width 100%
+	list-style none
+	text-align center
+	padding-left 0
+	li
+		display inline-block
+		text-transform uppercase
+	li:not(:last-child)
+		margin-right 8%
+		padding-right 8%
+		border-right 1px solid #FFF
+	a
+		color #FFF
+		font-size 18px
+	a:hover
+		color #CCC
+		text-decoration none
 
 
