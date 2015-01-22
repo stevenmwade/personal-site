@@ -3,16 +3,23 @@ body {
   width: 100%;
   font-family: "HelveticaNeue-Light", "Lato", sans-serif;
 }
+body {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
+}
+img {
+  width: 100%;
 }
 .nav {
   height: 125px;
   width: 100%;
   background-color: #fff;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.2);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.2);
-  box-shadow: 0px 5px 5px 0px rgba(50,50,50,0.2);
+  z-index: 999;
+  -webkit-box-shadow: 0px 5px 5px 0px #000;
+  -moz-box-shadow: 0px 5px 5px 0px #000;
+  box-shadow: 0px 5px 5px 0px #000;
 }
 .logo {
   height: 125px;
@@ -31,7 +38,6 @@ a {
   font-weight: 600;
 }
 .nav-links .active {
-  padding: 5px 20px;
   border: 3px solid #33577e;
 }
 .nav-links .active a {
@@ -40,30 +46,74 @@ a {
 .nav-list {
   list-style: none;
   text-align: right;
-  margin: 35px 0;
+  margin-top: 43px;
 }
 .nav-list li {
   display: inline-block;
+  border: solid 3px #fff;
 }
-.nav-list li:not(:last-child) {
-  margin-right: 10%;
-}
-.nav-list a {
+.nav-list li a {
+  padding: 10px 25px;
   text-transform: uppercase;
   color: #000;
   font-size: 24px;
 }
-.nav-list a:hover {
+.nav-list li a:hover {
   text-decoration: none;
   color: #33577e;
 }
+.nav-list li:hover {
+  border: 3px solid #33577e;
+}
+.nav-list li:not(:last-child) {
+  margin-right: 7%;
+}
+.work-nav ul {
+  display: none;
+  text-align: center;
+  padding: 0;
+  background-color: #fff;
+  width: 127px;
+  position: absolute;
+  margin-left: -3px;
+  padding-top: 20px;
+}
+.work-nav ul li {
+  text-align: center;
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.work-nav ul li a {
+  padding: 5px 15px;
+}
+.work-nav ul li a:hover {
+  background-color: #33577e;
+  font-family: "HelveticaNeue-UltraLight";
+  color: #fff;
+  font-weight: 100;
+}
+.work-nav ul li:hover {
+  border: none;
+}
+.work-nav:hover ul {
+  display: block;
+  border: 3px solid #33577e;
+  border-top: none;
+}
+.work-nav:hover {
+  border: 3px solid #33577e;
+}
 .footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   background-color: #33577e;
   height: 180px;
   margin-bottom: -140px;
+  -webkit-box-shadow: 0px -5px 5px 0px rgba(50,50,50,0.3);
+  -moz-box-shadow: 0px -5px 5px 0px rgba(50,50,50,0.3);
+  box-shadow: 0px -5px 5px 0px rgba(50,50,50,0.3);
 }
 .footer-hidden {
   text-align: center;
@@ -139,4 +189,11 @@ a {
 .footer-links a:hover {
   color: #ccc;
   text-decoration: none;
+}
+#home {
+  background: url("/images/home-bg.jpg") no-repeat top left;
+  background-position: 0 -150px;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
 }

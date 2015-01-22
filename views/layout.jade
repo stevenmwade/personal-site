@@ -16,10 +16,21 @@ html(lang='en')
 						| <span class="first-name">Steven</span><span class="last-name">Wade</span>
 				.col-sm-7.col-sm-offset-1.nav-links
 					ul.nav-list
-						li.active: a(href="") Home
-						li: a(href="") About
-						li: a(href="") Work
-						li: a(href="") Contact
+						li.active: a(href="#") Home
+						li: a(href="#") About
+						li.work-nav
+							a(href="#") Work
+							ul
+								li
+									a(href="#") Web
+								li
+									a(href="#") Photo
+							//- ul.work-nav
+							//- 	li: a(href="#") Work
+							//- 	li.divider
+							//- 	li: a(href="#") Web
+							//- 	li: a(href="#") Photo
+						li: a(href="#") Contact
 
 		block content
 
@@ -31,11 +42,11 @@ html(lang='en')
 			.row
 				.col-sm-6.col-sm-offset-3
 					ul.social-icons
-						li: <a href="http://github.com/stevenmwade"><i class="fa fa-3x fa-github-square"></i></a>
-						li: <a href="http://linkedin.com/in/stevenmwade"><i class="fa fa-3x fa-linkedin-square"></i></a>
-						li: <a href="http://www.facebook.com/edawleahcilnevets"><i class="fa fa-3x fa-facebook-square"></i></a>
-						li: <a href="http://twitter.com/stevenmwade"><i class="fa fa-3x fa-twitter-square"></i></a>
-						li: <a href="http://instagram.com/stevenmwade/"><i class="fa fa-3x fa-instagram"></i></a>
+						li: <a href="http://github.com/stevenmwade", target="_blank"><i class="fa fa-3x fa-github-square"></i></a>
+						li: <a href="http://linkedin.com/in/stevenmwade", target="_blank"><i class="fa fa-3x fa-linkedin-square"></i></a>
+						li: <a href="http://www.facebook.com/edawleahcilnevets", target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+						li: <a href="http://twitter.com/stevenmwade", target="_blank"><i class="fa fa-3x fa-twitter-square"></i></a>
+						li: <a href="http://instagram.com/stevenmwade/", target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
 			.row
 				.col-sm-8.col-sm-offset-2
 					ul.footer-links

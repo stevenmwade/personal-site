@@ -5,8 +5,15 @@ html, body
   width 100%
   font-family "HelveticaNeue-Light", "Lato", sans-serif
  
+ body
+ 	overflow hidden
+
  a
  	text-decoration none
+
+img
+	width 100%
+	
 
 // NAVIGATION
 
@@ -14,9 +21,10 @@ html, body
 	height 125px
 	width 100%
 	background-color #fff
-	-webkit-box-shadow 0px 5px 5px 0px rgba(50, 50, 50, 0.2)
-	-moz-box-shadow    0px 5px 5px 0px rgba(50, 50, 50, 0.2)
-	box-shadow         0px 5px 5px 0px rgba(50, 50, 50, 0.2)
+	z-index 999
+	-webkit-box-shadow 0px 5px 5px 0px rgba(0, 0, 0, 1)
+	-moz-box-shadow    0px 5px 5px 0px rgba(0, 0, 0, 1)
+	box-shadow         0px 5px 5px 0px rgba(0, 0, 0, 1)
 
 .logo
 	height 125px
@@ -34,7 +42,6 @@ html, body
 
 .nav-links
 	.active
-		padding 5px 20px
 		border 3px solid blue
 		a
 			color blue
@@ -42,28 +49,69 @@ html, body
 .nav-list
 	list-style none
 	text-align right
-	margin 35px 0
+	margin-top 43px
 	li
 		display inline-block
-	li:not(:last-child)
-		margin-right 10%
-	a
-		text-transform uppercase
-		color #000
-		font-size 24px
+		border solid 3px #fff
+		a
+			padding 10px 25px
+			text-transform uppercase
+			color #000
+			font-size 24px
+			&:hover
+				text-decoration none
+				color blue
 		&:hover
-			text-decoration none
-			color blue
+			border 3px solid blue
+	li:not(:last-child)
+		margin-right 7%
+
+.work-nav
+	ul
+		display none
+		text-align center
+		padding 0
+		// margin-top 10px
+		background-color #fff
+		width 127px
+		position absolute
+		margin-left -3px
+		padding-top 20px
+		li
+			text-align center
+			border none
+			padding 0
+			margin-bottom 10px
+			a
+				padding 5px 15px
+				&:hover
+					background-color blue
+					font-family "HelveticaNeue-UltraLight"
+					color #FFF
+					font-weight 100
+					// padding 5px 15px
+			&:hover
+				border none
+	&:hover ul
+		display block
+		border 3px solid blue
+		border-top none
+	&:hover
+		border 3px solid blue
+	
 
 // FOOTER
 
 .footer
 	width 100%
-	position absolute
+	position fixed
 	bottom 0px
 	background-color blue
 	height 180px
 	margin-bottom -140px
+	-webkit-box-shadow 0px -5px 5px 0px rgba(50, 50, 50, 0.3)
+	-moz-box-shadow    0px -5px 5px 0px rgba(50, 50, 50, 0.3)
+	box-shadow         0px -5px 5px 0px rgba(50, 50, 50, 0.3)
 
 .footer-hidden
 	text-align center
@@ -132,4 +180,11 @@ html, body
 		color #CCC
 		text-decoration none
 
+// INDEX
 
+#home
+	background url('/images/home-bg.jpg') no-repeat top left
+	background-position (0 -150px)
+	width 100%
+	height 100vh
+	z-index 0
