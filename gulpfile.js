@@ -22,7 +22,7 @@ gulp.task('css', function(){
 	gulp.src(paths.css)
 		.pipe(stylus())
 		.pipe(concat('main.css'))
-		// .pipe(minifycss())
+		.pipe(minifycss())
 		.pipe(gulp.dest(paths.cssDest))
 		.pipe(livereload({ auto: false }));
 });

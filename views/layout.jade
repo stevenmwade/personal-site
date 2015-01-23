@@ -5,6 +5,7 @@ html(lang='en')
 		title Steven Wade | Web Developer &amp; Photographer
 		link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
 		link(rel="stylesheet", href="/vendor/bootstrap/css/bootstrap.min.css")
+		link(rel="stylesheet", href="/vendor/slick/slick.css")
 		link(rel="stylesheet", href="/css/main.css")
 
 	body
@@ -16,21 +17,21 @@ html(lang='en')
 						| <span class="first-name">Steven</span><span class="last-name">Wade</span>
 				.col-sm-7.col-sm-offset-1.nav-links
 					ul.nav-list
-						li.active: a(href="#") Home
-						li: a(href="#") About
+						li.active: a(href="/") Home
+						li: a(href="/about") About
 						li.work-nav
-							a(href="#") Work
+							a(href="/work/web") Work
 							ul
 								li
-									a(href="#") Web
+									a(href="/work/web") Web
 								li
-									a(href="#") Photo
+									a(href="/work/photo") Photo
 							//- ul.work-nav
 							//- 	li: a(href="#") Work
 							//- 	li.divider
 							//- 	li: a(href="#") Web
 							//- 	li: a(href="#") Photo
-						li: a(href="#") Contact
+						li: a(href="/contact") Contact
 
 		block content
 
@@ -58,5 +59,6 @@ html(lang='en')
 
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		script(src="/vendor/bootstrap/js/bootstrap.min.js")
+		script(src="/vendor/slick/slick.min.js")
 		script(src="/js/main.js")
 		

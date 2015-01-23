@@ -21,6 +21,10 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
+app.get('/about', indexController.about);
+app.get('/work/web', indexController.web);
+app.get('/work/photo', indexController.photo);
+app.get('/contact', indexController.contact);
 
 var server = app.listen(2975, function() {
 	console.log('Express server listening on port ' + server.address().port);

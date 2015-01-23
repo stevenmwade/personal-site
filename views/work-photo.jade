@@ -1,0 +1,40 @@
+extends layout
+
+block content
+
+	main
+		//- Will use if every photo is the same dimensions, but aspect ratio is too high
+		//- (2.8) for portfolio, most screens are 16:10 or 16:9. Could swap out different
+		//- image crops if aspect ratio changes. Must use not full screen slider
+
+		//- #carousel-work-photo.carousel.slide.carousel-size(data-ride="carousel")
+		//- 	ol.carousel-indicators
+		//- 		li.active(data-target="#carousel-work-photo", data-slide-to="0")
+		//- 		li(data-target="#carousel-work-photo", data-slide-to="1")
+		//- 		li(data-target="#carousel-work-photo", data-slide-to="2")
+		//- 	.carousel-inner(role="listbox")
+		//- 		.item.active
+		//- 			img(src="http://placehold.it/1920x1024", alt="")
+		//- 			.carousel-caption
+		//- 		.item
+		//- 			img(src="http://placehold.it/1920x1024", alt="")
+		//- 			.carousel-caption
+		//- 		.item
+		//- 			img(src="http://placehold.it/1920x1024", alt="")
+		//- 			.carousel-caption
+		//- 	a.left.carousel-control(href="#carousel-work-photo", role="button", data-slide="prev")
+		//- 		span.fa.fa-angle-left.fa-3x(aria-hidden="true")
+		//- 		span.sr-only
+		//- 	a.right.carousel-control(href="#carousel-work-photo", role="button", data-slide="next")
+		//- 		span.fa.fa-angle-right.fa-3x(aria-hidden="true")
+		//- 		span.sr-only
+
+		.work-photo.col-sm-6.col-sm-offset-3
+			div
+				img(src="http://placehold.it/1440x900", alt="")
+			div
+				img(src="http://placehold.it/1366x768", alt="")
+			div
+				img(src="http://placehold.it/1920x1080", alt="")
+			div
+				img(src="http://placehold.it/1920x1200", alt="")
