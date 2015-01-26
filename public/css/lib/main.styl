@@ -17,8 +17,9 @@ img
 	max-height calc(100vh - 125px - 40px)
 	max-width 100vw
 	
-
-// NAVIGATION
+////////////////
+// NAVIGATION //
+////////////////
 
 .nav
 	height 125px
@@ -56,7 +57,7 @@ img
 	margin-top 43px
 	li
 		display inline-block
-		border solid 3px #fff
+		border solid 3px rgba(0,0,0,0)
 		a
 			padding 10px 25px
 			text-transform uppercase
@@ -103,8 +104,9 @@ img
 	&:hover
 		border 3px solid blue
 	
-
-// FOOTER
+////////////
+// FOOTER //
+////////////
 
 .footer
 	width 100%
@@ -127,30 +129,30 @@ img
 
 .footer-up
 	bottom 140px
-	transition bottom 0.7s ease-in-out
-	-webkit-transition bottom 0.7s ease-in-out
-	-moz-transition bottom 0.7s ease-in-out
-	-o-transition bottom 0.7s ease-in-out
+	transition bottom 0.5s ease-in-out
+	-webkit-transition bottom 0.5s ease-in-out
+	-moz-transition bottom 0.5s ease-in-out
+	-o-transition bottom 0.5s ease-in-out
 	
 .footer-down
 	bottom 0px
-	transition bottom 0.7s ease-in-out
-	-webkit-transition bottom 0.7s ease-in-out
-	-moz-transition bottom 0.7s ease-in-out
-	-o-transition bottom 0.7s ease-in-out
+	transition bottom 0.5s ease-in-out
+	-webkit-transition bottom 0.5s ease-in-out
+	-moz-transition bottom 0.5s ease-in-out
+	-o-transition bottom 0.5s ease-in-out
 
 .footer-chevron-up
-	transition transform 0.7s ease-in-out
-	-webkit-transition transform 0.7s ease-in-out
-	-moz-transition transform 0.7s ease-in-out
+	transition transform 0.5s ease-in-out
+	-webkit-transition transform 0.5s ease-in-out
+	-moz-transition transform 0.5s ease-in-out
 	
 .footer-chevron-down
 	transform rotate(180deg)
 	-webkit-transform rotate(180deg)
 	-moz-transform rotate(180deg)
-	transition transform 0.7s ease-in-out
-	-webkit-transition transform 0.7s ease-in-out
-	-moz-transition transform 0.7s ease-in-out
+	transition transform 0.5s ease-in-out
+	-webkit-transition transform 0.5s ease-in-out
+	-moz-transition transform 0.5s ease-in-out
 	
 .social-icons
 	text-align center
@@ -185,7 +187,9 @@ img
 		color #CCC
 		text-decoration none
 
-// INDEX
+///////////
+// INDEX //
+///////////
 
 #home
 	background url('/images/home-bg.jpg') no-repeat top left
@@ -195,8 +199,14 @@ img
 	height 100vh
 	z-index 0
 
+#home-cta
+	display inline-block
+	width 100%
+	margin 0 auto
+	text-align center
+
 .button
-	margin-top 50px
+	position relative
 	display inline-block
 	
 // .button-inner
@@ -257,7 +267,45 @@ img
 	a
 		color #000
 
-// WORK - PHOTO
+///////////////////
+//               //
+//     ABOUT     //
+//               //
+///////////////////
+
+.about-title
+	font-family "Hoefler Text", "HelveticaNeue-Light"
+	font-style italic
+	font-size 1.6em
+	color blue
+	text-align center
+	h1
+		margin-bottom 5px
+		margin-top 10px
+		
+.history-content
+	text-align center
+	font-size 1.5em
+	p
+		margin-top 0
+
+.skills-content
+	// text-align justify
+	justify-content space-around
+	img
+		// width 100px
+		display inline-block
+		
+.skills-text-hidden
+	p
+
+
+
+///////////////////////////
+//                       //
+//     WORK - PHOTO      //
+//                       //
+///////////////////////////
 
 // For use with full screen slider
 
@@ -273,4 +321,8 @@ img
 
 .slick-prev:before, .slick-next:before
 	color #000
+
+
+
+
 

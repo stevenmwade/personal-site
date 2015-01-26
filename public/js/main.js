@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
-	$('.navlist, a').on('click', function(event) {
-		var linkText = $(this).text();
-		var path = $(this).attr('href');
-		console.log('Link text: ', linkText)
-		console.log('Path: ', path)
-		$('.active').removeClass('active');
-		if(linkText == 'Photo' || linkText == 'Web') {
-			$('.work-nav').addClass('active');
-		} else {
-			$(this).parent('li').addClass('active');
-		}
-		window.location.pathname(path);
-		return false;
-	});
+	////////////////////////////////////
+	// Add active class to navigation //
+	////////////////////////////////////
+	var url = window.location.href;
+	console.log('URL: ', url);
+ 	var page = url.substr(url.lastIndexOf('/'));
+ 	console.log('Page: ', page);
+ 	if(page === '/web' || page === '/photo') {
+ 		$('.work-nav').addClass('active');
+ 	} else {
+ 		$('a[href="'+page+'"]').parent().addClass('active');
+ 	}
 
-	// Footer functionality
+	//////////////////////////
+	// Footer functionality //
+	//////////////////////////
 	$('.footer-chevron').on('click', function(event) {
 		event.preventDefault();
 		if($('.footer').hasClass('footer-up')) {
@@ -30,7 +30,9 @@ $(document).ready(function() {
 		}
 	});
 
-	// Slick Slider
+	//////////////////
+	// Slick Slider //
+	//////////////////
 	$('.work-photo').slick({
 		dots: true,
 		infinite: true,

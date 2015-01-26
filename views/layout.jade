@@ -17,9 +17,9 @@ html(lang='en')
 						| <span class="first-name">Steven</span><span class="last-name">Wade</span>
 				.col-sm-7.col-sm-offset-1.nav-links
 					ul.nav-list
-						li.active: a(href="/") Home
-						li: a(href="/about") About
-						li.work-nav
+						li.nav-item: a(href="/") Home
+						li.nav-item: a(href="/about") About
+						li.nav-item.work-nav
 							a(href="/work/web") Work
 							ul
 								li
@@ -31,7 +31,7 @@ html(lang='en')
 							//- 	li.divider
 							//- 	li: a(href="#") Web
 							//- 	li: a(href="#") Photo
-						li: a(href="/contact") Contact
+						li.nav-item: a(href="/contact") Contact
 
 		block content
 
@@ -43,7 +43,7 @@ html(lang='en')
 			.row
 				.col-sm-6.col-sm-offset-3
 					ul.social-icons
-						li: <a href="http://github.com/stevenmwade", target="_blank"><i class="fa fa-3x fa-github-square"></i></a>
+						li: <a href="https://github.com/stevenmwade?tab=repositories", target="_blank"><i class="fa fa-3x fa-github-square"></i></a>
 						li: <a href="http://linkedin.com/in/stevenmwade", target="_blank"><i class="fa fa-3x fa-linkedin-square"></i></a>
 						li: <a href="http://www.facebook.com/edawleahcilnevets", target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
 						li: <a href="http://twitter.com/stevenmwade", target="_blank"><i class="fa fa-3x fa-twitter-square"></i></a>
